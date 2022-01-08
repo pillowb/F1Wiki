@@ -1,2 +1,2 @@
-"# F1Wiki" 
-"# F1Wiki" 
+This is F1 Wiki
+
