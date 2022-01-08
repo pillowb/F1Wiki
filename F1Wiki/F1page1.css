@@ -1,0 +1,145 @@
+/* Import new font */
+@font-face {
+  font-family: f1font;
+  src: url("images/Formula1-Regular.ttf");
+}
+
+/* include the padding and border in the website width and height as well as change the font of all text */
+* {
+  box-sizing: border-box;
+  font-family: "f1font", sans-serif;
+}
+
+/* bold and center the header 1 and 2  */
+h1, h2 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 3vw;
+  font-family: "f1font", sans-serif;
+}
+
+/* align paragraph to be center */
+p {
+  text-align: center;
+  /* makes text white */
+  color: #f5f5f5;
+  font-size: calc(1vw + 12px);
+  font-family: "f1font", sans-serif;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/* make the roundimg center align */
+div {
+  text-align: center;
+}
+
+/* To align unordered list of info of F1 drivers as well as remove the dots and changing color of the info of drivers  */
+div ul li {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  margin-right: 25px;
+}
+
+/* set image to be centered and does not repeat and move when scrolling */
+body {
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("images/A11Y_1365.jfif");
+  background-repeat: no-repeat;
+  font-family: "f1font", sans-serif;
+}
+
+/* align carousel to be align */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* makes sure the nav bar is one straight line */
+nav li {
+  display: inline-block;
+  /* align the nav bar */
+  right: 2.9%;
+  margin-left: 5.3vw;
+  padding-top: 1.1vw;
+  position: relative;
+}
+
+/* change text on the nav bar */
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: calc(1vw + 5px);
+}
+
+/* creates a line border above the words to show user is selecting it  */
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.7vw;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+/* Sets the width of the border */
+nav a:hover::before {
+  width: 100%;
+}
+
+/* When hovering a light blue color will be shown to show user that he or she is selecting it */
+nav a:hover {
+  text-decoration: none;
+  color: #40E0D0;
+}
+
+/* to show user current page */
+.current {
+  color: rgb(255, 24, 1);
+}
+
+/* create the circular border */
+.roundboy {
+  border-radius: 20vw;
+  padding: 0.5vw;
+  border: 0.5vw solid transparent;
+  background: linear-gradient(90deg, #000000 100%);
+}
+
+/* Remove the line on hyperlink to the drivers instagram */
+.nounderline {
+  text-decoration: none;
+  color: white;
+}
+
+/* Creates a black border around the image as well as increase the height and width of the images */
+.item img {
+  width: 40vw;
+  height: 40vw;
+  margin: 8vw auto;
+  padding-top: 0.3vw;
+  background: black;
+  text-align: center;
+  color: #FFF;
+  font-size: 3vw;
+}
+
+/* nav animation */
+div#top-header {
+  background-color: #343434;
+  position: fixed;
+  z-index: 300;
+  height: 8vh;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.4s;
+  opacity: 90%;
+}

@@ -1,0 +1,193 @@
+/* Import new font */
+@font-face {
+  font-family: f1font;
+  src: url("images/Formula1-Regular.ttf");
+}
+
+/* changes all text to font */
+* {
+  font-family: "f1font", sans-serif;
+}
+
+/* Setting up background image */
+body {
+  margin: 0;
+  background-image: url("images/25l3LBV.jpg");
+  background-size: 350%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* adjust position */
+.cont {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* makes nav bar center */
+nav {
+  text-align: center;
+  padding-top: 0;
+}
+
+/* remove margin and padding */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* makes sure the nav bar is one straight line */
+nav li {
+  display: inline-block;
+  /* align the nav bar */
+  right: 5.5%;
+  margin-left: 7vw;
+  padding-top: 1.2vw;
+  position: relative;
+}
+
+/* change text on the nav bar */
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: calc(1vw + 5px);
+}
+
+/* creates a line border above the words to show user is selecting it  */
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.7vw;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+/* Sets the width of the border */
+nav a:hover::before {
+  width: 100%;
+}
+
+/* When hovering a light blue color will be shown to show user that he or she is selecting it */
+nav a:hover {
+  text-decoration: none;
+  color: #40E0D0;
+}
+
+/* to show user current page */
+.current {
+  color: rgb(255, 24, 1);
+}
+
+/* align header 1 and header 2 to be center */
+h1, h2 {
+  color: #E8E8E8;
+  text-align: center;
+  font-family: "f1font", sans-serif;
+  font-size: calc(3vw + 15px);
+}
+
+/* center the text */
+p {
+  text-align: center;
+  color: #E8E8E8;
+  padding: 50px 50px;
+  font-size: calc(2vw+10px);
+  font-family: "f1font", sans-serif;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/DXI14281_20191201120510963.jpg");
+  /*Set  a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("images/mercedes-amg-at-the-2014-formula-one-abu-dhabi-grand-prix_100491529_h.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("images/EKt6TXkWkAATknG.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("images/1-Unbranded_2019AbuDhabiGrandPrixSunday_56I3413-1.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image: url("images/319e010b78475fbc0dc4e5f0dca378de.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the scrolling effect */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax5 {
+  /* The image used */
+  background-image: url("images/AP-22F39CTVW2111_hires_jpeg_24bit_rgb-scaled.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the scrolling effect */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Align text in div  */
+.whiteboy {
+  color: white;
+  text-align: center;
+  list-style-type: none;
+}
+
+/* nav animation */
+div#top-header {
+  background-color: #343434;
+  position: fixed;
+  z-index: 300;
+  height: 3.8vw;
+  top: 0;
+  width: 100%;
+  transition: top 0.4s;
+  opacity: 90%;
+}

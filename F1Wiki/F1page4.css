@@ -1,0 +1,160 @@
+/* Import new font */
+@font-face {
+  font-family: f1font;
+  src: url("images/Formula1-Regular.ttf");
+}
+
+* {
+  font-family: "f1font", sans-serif;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  background-image: url("images/226175.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h2 {
+  text-align: center;
+  right: 30vw;
+  font-size: 400%;
+  font-family: "f1font", sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-size: 300%;
+  font-family: "f1font", sans-serif;
+}
+
+/* adjust position */
+.cont {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* makes nav bar center */
+nav {
+  text-align: center;
+  padding-top: 0px;
+}
+
+/* remove margin and padding */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* makes sure the nav bar is one straight line */
+nav li {
+  display: inline-block;
+  right: 5.5%;
+  margin-left: 7vw;
+  padding-top: 1.1vw;
+  position: relative;
+}
+
+/* change text on the nav bar */
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: calc(1vw + 5px);
+}
+
+/* creates a line border above the words to show user is selecting it  */
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.7vw;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+/* Sets the width of the border */
+nav a:hover::before {
+  width: 100%;
+}
+
+/* When hovering a light blue color will be shown to show user that he or she is selecting it */
+nav a:hover {
+  text-decoration: none;
+  color: #40E0D0;
+}
+
+/* To show user current page */
+.current {
+  color: rgb(255, 24, 1)
+}
+
+/* allows the words to look more compact */
+p {
+  padding-left: 12vw;
+  padding-right: 12vw;
+  text-align: center;
+  font-size: 150%;
+  font-family: "f1font";
+}
+
+/* nav animation */
+div#top-header {
+  background-color: #343434;
+  position: fixed;
+  height: 3.8vw;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.4s;
+  opacity: 90%;
+}
+
+/* get rid of line under the hyperlink */
+.nounderline {
+  text-decoration: none;
+}
+
+/* makes margin of hr to be zero so that it can be align with the black fieldset */
+hr.divider {
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  background-color: white;
+}
+
+hr.divider1 {
+  margin-top: 0vw;
+  background-color: white;
+}
+
+/* changes color of fieldset to black */
+fieldset {
+  background-color: black;
+}
+
+/* changes input color to black */
+input {
+  color: black;
+}
+
+/* input of text changes color to black */
+textarea {
+  color: black;
+}
+
+/* changes drivers name color to black */
+#drivers {
+  color: black;
+}
+
+/* changes options of drivers to black */
+option {
+  color: black;
+}

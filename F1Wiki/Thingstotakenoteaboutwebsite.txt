@@ -1,0 +1,6 @@
+5 things about website
+Carousel(Bootstrap) Page 1
+Navigation Bar(javascript) All pages
+Countdown timer (javascript) Page 3
+fade in and out images (javascript) Page 1
+Parallax images (css) Page 2

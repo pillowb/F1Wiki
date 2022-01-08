@@ -1,0 +1,159 @@
+/* Import new font */
+@font-face {
+  font-family: f1font;
+  src: url("images/Formula1-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "f1font", sans-serif;
+}
+
+/* makes header be centered and change text color to white */
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Setting up background image */
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* make the countdown timer to be white and centralise */
+p {
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+}
+
+/* Make the sentence smaller  */
+p.tickets {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+}
+
+/* change appearance of the hyperlink */
+.nounderline {
+  text-decoration: none;
+  color:grey;
+}
+
+/* adjust position */
+.cont {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* makes nav bar center */
+nav {
+  text-align: center;
+  padding-top: 0px;
+}
+
+/* remove margin and padding */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* makes sure the nav bar is one straight line */
+nav li {
+  display: inline-block;
+  /* align the nav bar */
+  right: 5.5%;
+  margin-left: 7vw;
+  padding-top: 1.2vw;
+  position: relative;
+}
+
+/* change text on the nav bar */
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: calc(1vw + 5px);
+}
+
+/* creates a line border above the words to show user is selecting it  */
+nav a::before {
+  content: '';
+  display: block;
+  height: 0.7vw;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+/* Sets the width of the border */
+nav a:hover::before {
+  width: 100%;
+}
+
+/* When hovering a light blue color will be shown to show user that he or she is selecting it */
+nav a:hover {
+  text-decoration: none;
+  color: #40E0D0;
+}
+
+/* To show user current page */
+.current {
+  color: rgb(255, 24, 1)
+}
+
+/* nav animation */
+div#top-header {
+  background-color: #343434;
+  position: fixed;
+  height: 3.8vw;
+  width: 100%;
+  display: block;
+  transition: top 0.4s;
+  opacity: 90%;
+}
+
+/* set spacing between border space and width space */
+td, th {
+  padding: 2vw;
+  width: 22vw;
+}
+
+/* get rid of lines in the table */
+table {
+  border-collapse: collapse;
+}
+
+/* align table to be in middle */
+.tablelol {
+  margin-left: 5.5vw;
+}
+
+/* makes the table margin bigger */
+tr {
+  border-bottom: 2px solid white;
+}
+
+/* capitalize headers and center the header */
+th, td {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* changes the color of every even row to grey */
+tr:nth-child(even) {
+  background-color: #A9A9A9;
+}
+
+/* makes text white */
+.white {
+  color: white;
+}

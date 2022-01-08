@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Standings</title>
+  <link rel="stylesheet" type="text/css" href="F1page3.css">
+</head>
+
+<body>
+  <div id="top-header">
+    <div class="cont">
+      <nav>
+        <ul>
+          <li><a href="F1page1.html">Home</a></li>
+          <li><a href="F1page2.html">Teams</a></li>
+          <li><a href="#" class="current">Standings</a></li>
+          <li><a href="F1page4.html">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h1>2022 Bahrain Grand Prix Race Countdown</h1>
+  <p id="demo"></p>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 20, 2022 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "VROOMMM";
+      }
+    }, 1000);
+  </script>
+  <p class="tickets">Get your tickets <a href="https://tickets.formula1.com/en/f1-3222-austria" class="nounderline" target="_blank">now</a>!!!</p>
+  <br>
+  <h1>2021 Constuctor Standings</h1>
+  <br>
+  <table class="tablelol">
+    <tr class="white">
+      <th>POSITION</th>
+      <th>TEAMS</th>
+      <th>WINS</th>
+      <th>POINTS</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>MERCEDES</td>
+      <td>15</td>
+      <td>613.5</td>
+    </tr>
+    <tr class="white">
+      <td>2</td>
+        <td>RED BULL RACING HONDA</td>
+      <td>3</td>
+      <td>585.5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>FERRARI</td>
+      <td>3</td>
+      <td>323.5</td>
+    </tr>
+    <tr class="white">
+      <td>4</td>
+      <td>MCLAREN MERCEDES</td>
+      <td>0</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ALPHINE RENAULT</td>
+      <td>0</td>
+      <td>155</td>
+    </tr>
+    <tr class="white">
+      <td>6</td>
+      <td>ALPHATAURI HONDA</td>
+      <td>0</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>ASTON MARTIN MERCEDES</td>
+      <td>0</td>
+      <td>77</td>
+    </tr>
+    <tr class="white">
+      <td>8</td>
+      <td>WILLIAMS MERCEDES</td>
+      <td>0</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>ALFA ROMEO RACING FARRARI</td>
+      <td>0</td>
+      <td>13</td>
+    <tr class="white">
+      <td>10</td>
+      <td>HAAS FARRARI</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+  <br>
+  <h1>Top 5 Drivers in 2021</h1>
+  <table class="tablelol">
+    <tr class="white">
+      <th>DRIVER</th>
+      <th>TEAM</th>
+      <th>WINS</th>
+      <th>POINTS</th>
+    </tr>
+    <tr>
+      <td>Max <strong>VERSTAPPEN<strong></td>
+      <td>RED BULL RACING HONDA</td>
+      <td>10</td>
+      <td>395.5</td>
+    </tr>
+    <tr class="white">
+      <td>Lewis <strong>HAMILTON</strong></td>
+      <td>MERCEDES</td>
+      <td>8</td>
+      <td>387.5</td>
+    </tr>
+    <tr>
+      <td>Valtteri <strong>BOTTAS</strong></td>
+      <td>MERCEDES</td>
+      <td>1</td>
+      <td>226</td>
+    </tr>
+    <tr class="white">
+      <td>Sergio <strong>PEREZ</strong></td>
+      <td>RED BULL RACING HONDA</td>
+      <td>1</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <td>Carlos <strong>SAINZ</strong></td>
+      <td>FERRARI</td>
+      <td>0</td>
+      <td>164.5</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <script src="F1navpage.js"></script>
+</body>
+
+</html>

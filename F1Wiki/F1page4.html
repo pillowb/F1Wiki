@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>More</title>
+  <link rel="stylesheet" type="text/css" href="F1page4.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<header>
+  <div id="top-header">
+    <div class="cont">
+      <nav>
+        <ul>
+          <li><a href="F1page1.html">Home</a></li>
+          <li><a href="F1page2.html">Teams</a></li>
+          <li><a href="F1page3.html">Standings</a></li>
+          <li><a href="#" class="current">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <div>
+    <h2>Trailers</h2>
+    <br>
+    <iframe class="video" width="560vw" height="315vw" src="https://www.youtube.com/embed/xcf8o4hCtSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="video" width="560vw" height="315vw" src="https://www.youtube.com/embed/wtJPe1ksS6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br>
+    <div>
+      <p> Catch the latest Formula One highlights <a href="https://www.formula1.com/en/video.f1-topic-highlights.html" class="nounderline" target="
+          ">here</a></p>
+      <p> Watch the latest episodes of Formula One Drive to Survive on Netflix right now!!!</p>
+    </div>
+  </div>
+  <br>
+  <h2>Feedback</h2>
+  <hr class="divider">
+  <form onsubmit="return results()" action="F1formreply.html" id="rip" method="get">
+    <fieldset width=200px>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" tabindex="1" required autofocus><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" tabindex="2" required><br>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" tabindex="3" required><br><br>
+      <p>Enter your Gender:</p>
+      <input type="radio" id="male" name="gender" tabindex="4" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <label for="contact">Contact Number:</label><br>
+      <input type="tel" name="contact" tabindex="5" title="8 digits telephone number" id="contact" pattern="[0-9]{8}" required><br><br>
+      <label for="Favourite Drivers">Favorite Drivers:</label><br>
+      <select id="drivers" name="drivers" tabindex="6">
+        <option value="Charles Leclerc" selected>Charles Leclerc</option>
+        <option value="Sebastian Vettel">Sebastian Vettel</option>
+        <option value="Daniel Ricciardo">Daniel Ricciardo</option>
+        <option value="Lando Norris">Lando Norris</option>
+        <option value="Nicholas Latifi">Nicholas Latifi</option>
+        <option value="Kimi Raikkonen">Kimi Raikkonen</option>
+        <option value="Romain Grosjean">Romain Grosjean</option>
+        <option value="Pierre Gasly">Pierre Gasly</option>
+        <option value="Sergio Perez">Sergio Perez</option>
+        <option value="Lance Stroll">Lance Stroll</option>
+        <option value="Kevin Magnussen">Kevin Magnussen</option>
+        <option value="Alex Albon">Alex Albon</option>
+        <option value="Daniil Kvyat">Daniil Kvyat</option>
+        <option value="Esteban Ocon">Esteban Ocon</option>
+        <option value="Max Verstappen">Max Verstappen</option>
+        <option value="Lewis Hamilton">Lewis Hamilton</option>
+        <option value="Carlos Sainz Jr.">Carlos Sainz Jr.</option>
+        <option value="George Russell">George Russell</option>
+        <option value="Valtteri Bottas">Valtteri Bottas</option>
+        <option value="Antonio Giovinazzi">Antonio Giovinazzi</option>
+      </select><br><br>
+      <textarea placeholder="Type your message..." id="feedback" tabindex="7" required></textarea><br><br>
+      <input type="submit" tabindex="8" value="Submit"><br><br>
+    </fieldset>
+  </form>
+  <hr class="divider1">
+  <script src="F1navpage.js"></script>
+</body>
+
+</html>

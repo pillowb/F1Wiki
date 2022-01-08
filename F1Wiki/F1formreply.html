@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Response Page</title>
+  <link rel="stylesheet" type="text/css" href="F1formreply.css">>
+
+  </script>
+</head>
+<header>
+  <div id="top-header">
+    <div class="cont">
+      <nav>
+        <ul>
+          <li><a href="F1page1.html">Home</a></li>
+          <li><a href="F1page2.html">Teams</a></li>
+          <li><a href="F1page3.html">Standings</a></li>
+          <li><a href="#" class="current">More</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div style="text-align:center;">
+    <h1>Thank you for your time!!!</h1>
+
+  </div>
+  </div>
+
+
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      var formData = location.search;
+      formData = formData.substring(1, formData.length);
+      while (formData.indexOf("+") != -1) {
+        formData = formData.replace("+", " ");
+      }
+      formData = unescape(formData);
+      var formArray = formData.split("&");
+      var para = new Array();
+      var color;
+
+      function setColor(c) {
+        var allBlanks = document.getElementsByClassName("blank");
+
+        for (i = 0; i < allBlanks.length; i++)
+          allBlanks[i].style.color = c;
+      }
+    </script>
+    <article>
+      <p><span id="fname" class="blank"></span> <span id="lname" class="blank"></span>, Your Response have been submitted!</p>
+      </p>
+      <p>We will get back to you on +65 <span id="contact" class="blank"></span> or email to <span id="email" class="blank"></span>
+      </p>
+    </article>
+    <script>
+      for (var i = 0; i < formArray.length; ++i) {
+
+        para = formArray[i].split("=");
+
+        switch (para[0]) {
+          case "fname":
+            document.getElementById("fname").innerHTML = para[1];
+            break;
+          case "lname":
+            document.getElementById("lname").innerHTML = para[1];
+            break;
+          case "contact":
+            document.getElementById("contact").innerHTML = para[1];
+            break;
+          case "email":
+            document.getElementById("email").innerHTML = para[1];
+            break;
+        }
+
+      }
+      setColor(color);
+    </script>
+    <span id="timer"></span>
+    <script type="text/javascript">
+      var count = 8;
+      var redirect = "F1page1.html";
+
+      function countDown() {
+        var timer = document.getElementById("timer");
+        if (count > 0) {
+          count--;
+          timer.innerHTML = "This page will redirect in " + count + " seconds.";
+          setTimeout("countDown()", 1000);
+        } else {
+          window.location.href = redirect;
+        }
+      }
+      countDown();
+    </script>
+
+    <script src="F1navpage.js"></script>
+  </body>
+
+</html>
